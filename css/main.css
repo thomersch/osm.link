@@ -11,23 +11,31 @@ green		#00BC9C
 */
 
 body {
+	font-size: 110%;
+}
+
+/* font override */
+.pure-g [class *="pure-u"] {
+	font-family: "Lato";
 }
 
 #main-header {
 	color: #ECF0F1;
 	background-color: #2B3D51;
-	padding: 2rem 0.5rem;
+	padding: 2rem 1.5rem;
 }
 
 #main-header h1 {
 	color: #00BC9C;
 	margin: 0;
 	font-weight: 100;
+	font-size: 300%;
 }
 
 #main-header h2 {
 	margin: 0;
 	font-weight: 100;
+	font-family: "LatoLight";
 }
 
 nav#top-navi {
@@ -49,8 +57,8 @@ section.palette {
 section.palette header {
 	background-color: #2B3D51;
 	color: #ECF0F1;
-	padding: 0.5rem;
-	margin-bottom: 1rem;
+	padding: 1rem 1.5rem;
+	margin-bottom: 0.5rem;
 }
 
 section.palette header h3 {
@@ -60,8 +68,20 @@ section.palette header h3 {
 
 section.highlight-box {
 	color: #ECF0F1;
-	padding: 0.5rem;
 	box-sizing: border-box;
+}
+
+section.highlight-box img {
+	box-sizing: border-box;
+	padding: .5rem;
+	width: 100%;
+	margin: auto;
+}
+
+section.highlight-box .description {
+	background-color: rgba(255, 255, 255, 0.2);
+	padding: .5rem;
+	line-height: 1.3em;
 }
 
 section.highlight-1 {
