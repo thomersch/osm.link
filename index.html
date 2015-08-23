@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
 	<meta charset="utf-8">
 	<title>OSM Link</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="/css/pure-min.css">
+	<link rel="stylesheet" href="/css/normalize.css">
 	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" media="screen and (max-width:1024px)" href="/css/responsive.css">
 	<!-- Lato Font -->
 	<link rel="stylesheet" href="/fonts/lato/Lato-Regular.css">
 	<link rel="stylesheet" href="/fonts/lato/Lato-Light.css">
 </head>
 
 <body>
-	<div class="pure-g">
-		<div class="pure-u-1-4">
-		</div>
-		<div class="pure-u-1-2">
-			<nav class="pure-menu pure-menu-horizontal" id="top-navi">
+	<div id="page-block">
+		<div class="filler-20"></div>
+
+		<div id="content-block">
+			<nav class="pure-menu pure-menu-horizontal pure-menu-scrollable" id="top-navi">
 				<ul class="pure-menu-list">
 					<li class="pure-menu-item"><a href="#" class="pure-menu-link">Navigation</a></li>
 					<li class="pure-menu-item"><a href="#" class="pure-menu-link">Onlinekarten</a></li>
@@ -33,23 +34,33 @@
 
 			<section class="palette">
 				<header><h3>Navigation und Routenplanung</h3></header>
-				<content class="pure-g">
-					<section class="pure-u-1-3 highlight-box highlight-1">
-						<img src="http://www.skobbler.de/images/apps/screenshots/ios/de/2.jpg">
-						<div class="description">Scout, eine ausgereifte Turn-By-Turn Navigation mit Sprachansagen, Echtzeitdaten und Offlinemodus.<br />Kostenlos in der Basisversion.</div>
-					</section>
-					<section class="pure-u-1-3 highlight-box highlight-2">
-						bar
-						<div class="description"></div>
-					</section>
-					<section class="pure-u-1-3 highlight-box highlight-3">
-						baz
-						<div class="description"></div>
-					</section>
+				<content class="hyphenate highlight-flex">
+					<div class="highlight-box highlight-1">
+						<a href="">
+							<div class="fitbox"><img class="pure-img" src="/img/scout.jpg"></div>
+							<div class="description">Scout, eine ausgereifte Turn-By-Turn Navigation mit Sprachansagen, Echtzeitdaten und Offlinemodus, für iOS und Android.<br />Kostenlos in der Basisversion.</div>
+						</a>
+					</div>
+
+					<div class="highlight-box highlight-2">
+						<a href="">
+							<div class="fitbox"><img src="https://graphhopper.com/maps/img/header.png"></div>
+							<div class="description">Graphhopper ist ein Onlineroutenplaner, mit dem man schnell Auto-, Fahrrad- oder Fußgängerrouten finden kann.</div>
+						</a>
+					</div>
+
+					<div class="highlight-box highlight-3">
+						<a href="">
+							<div class="fitbox"><img src="https://graphhopper.com/maps/img/header.png"></div>
+							<div class="description">Foobar.</div>
+						</a>
+					</div>
 				</content>
 			</section>
 		</div>
-	</div>
-</body>
 
+		<div class="filler-20"></div>
+	</div>
+	<script type="text/javascript" src="/js/hyphenator.js"></script>
+</body>
 </html>
