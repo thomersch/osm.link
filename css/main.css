@@ -12,7 +12,7 @@ green		#00BC9C
 
 body {
 	font-size: 110%;
-	font-family: "Lato";
+	font-family: "Lato", sans-serif;
 }
 
 a {
@@ -56,7 +56,7 @@ a {
 #main-header h2 {
 	margin: 0;
 	font-weight: 100;
-	font-family: "LatoLight";
+	font-family: "LatoLight", "Helvetica Neue", sans-serif;
 }
 
 nav#top-navi {
