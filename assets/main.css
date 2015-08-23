@@ -1,10 +1,22 @@
+/*
+
+Color palette
+
+bright grey	#ECF0F1
+dark blue 	#2B3D51
+grey blue 	#52626F
+red			#C33B26
+green		#00BC9C
+
+*/
+
 body {
 }
 
 #main-header {
 	color: #ECF0F1;
 	background-color: #2B3D51;
-	padding: 2rem;
+	padding: 2rem 0.5rem;
 }
 
 #main-header h1 {
@@ -28,4 +40,38 @@ nav#top-navi a {
 
 nav#top-navi a:hover {
 	background-color: #2B3D51;
+}
+
+section.palette {
+	margin-top: 1rem;
+}
+
+section.palette header {
+	background-color: #2B3D51;
+	color: #ECF0F1;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+section.palette header h3 {
+	margin: 0;
+	font-weight: 100;
+}
+
+section.highlight-box {
+	color: #ECF0F1;
+	padding: 0.5rem;
+	box-sizing: border-box;
+}
+
+section.highlight-1 {
+	background-color: #C33B26;
+}
+
+section.highlight-2 {
+	background-color: #00BC9C;
+}
+
+section.highlight-3 {
+	background-color: #52626F;
 }
