@@ -15,6 +15,10 @@ body {
 	font-family: "Lato";
 }
 
+a {
+	text-decoration: none;
+}
+
 #page-block {
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -58,13 +62,32 @@ body {
 nav#top-navi {
 	background-color: #52626F;
 	padding: 0;
+	overflow-y: hidden;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	white-space: nowrap;
 }
 
 nav#top-navi a {
 	color: #ECF0F1;
 }
 
-nav#top-navi a:hover {
+nav#top-navi ul {
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+
+nav#top-navi li {
+	list-style-type: none;
+	display: inline-block;
+	zoom: 1;
+	vertical-align: middle;
+	padding: 1em 0.5em;
+	text-align: center;
+}
+
+nav#top-navi li:hover {
 	background-color: #2B3D51;
 }
 
