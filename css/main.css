@@ -130,9 +130,11 @@ nav#top-navi li:hover {
 	-webkit-justify-content: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	-webkit-align-items:center;
-	-ms-flex-align:center;
-	align-items:center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 1rem;
+	
 }
 
 .highlight-box a {
@@ -143,15 +145,15 @@ nav#top-navi li:hover {
 .highlight-box img {
 	box-sizing: border-box;
 	display: block;
-	padding: .5rem;
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.50);
 	max-height: 100%;
 	max-width: 100%;
 	margin: auto;
 }
 
 .highlight-box .description {
-	background-color: rgba(255, 255, 255, 0.2);
-	padding: .5rem;
+	background-color: rgba(0, 0, 0, 0.1);
+	padding: 1rem;
 	line-height: 1.3em;
 	height:100%;
 	text-align: justify;
