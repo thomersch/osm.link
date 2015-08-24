@@ -3,7 +3,7 @@
 }
 
 .main-header {
-	padding-left: 0.5rem;
+	padding-left: 1rem;
 }
 
 .highlight-flex {
@@ -11,4 +11,10 @@
 }
 
 .introduction {
+}
+
+nav#top-navi .fake-handle {
+	display: inherit;
+	letter-spacing: -1px;
+	color: #00BC9C;
 }
