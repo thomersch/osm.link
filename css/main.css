@@ -40,20 +40,21 @@ a {
 	flex: 3 100%;
 }
 
-#main-header {
+.main-header {
 	color: #ECF0F1;
 	background-color: #2B3D51;
 	padding: 2rem 1.5rem;
+	margin-bottom: 1rem;
 }
 
-#main-header h1 {
+.main-header h1 {
 	color: #00BC9C;
 	margin: 0;
 	font-weight: 100;
 	font-size: 300%;
 }
 
-#main-header h2 {
+.main-header h2 {
 	margin: 0;
 	font-weight: 100;
 	font-family: "LatoLight", "Helvetica Neue", sans-serif;
@@ -89,6 +90,15 @@ nav#top-navi li {
 
 nav#top-navi li:hover {
 	background-color: #2B3D51;
+}
+
+.introduction {
+	padding: 0 0.5rem;
+	display: block;
+	-webkit-column-width: 20rem;
+	-moz-column-width: 20rem;
+	column-width: 20rem;
+	text-align: justify;
 }
 
 .palette {
@@ -144,6 +154,7 @@ nav#top-navi li:hover {
 	padding: .5rem;
 	line-height: 1.3em;
 	height:100%;
+	text-align: justify;
 }
 
 .highlight-flex {
@@ -174,4 +185,8 @@ nav#top-navi li:hover {
 	-webkit-flex: 1 100%;
 	-ms-flex: 1 100%;
 	flex: 1 100%;
+}
+
+footer {
+	margin: 2rem 0;
 }

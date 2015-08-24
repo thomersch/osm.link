@@ -2,6 +2,13 @@
 	display:none;
 }
 
+.main-header {
+	padding-left: 0.5rem;
+}
+
 .highlight-flex {
 	display: block;
+}
+
+.introduction {
 }
