@@ -19,7 +19,7 @@ a {
 	text-decoration: none;
 }
 
-#page-block {
+.page-block {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
