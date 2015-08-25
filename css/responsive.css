@@ -10,10 +10,7 @@
 	display: block;
 }
 
-.introduction {
-}
-
-nav#top-navi .fake-handle {
+.scrollable-navi .fake-handle {
 	display: inherit;
 	letter-spacing: -1px;
 	color: #00BC9C;
