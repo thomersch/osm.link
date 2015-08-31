@@ -12,4 +12,4 @@ before_install:
   -in iris_travis.enc -out iris_travis -d
 
 after_success:
-  - rsync --exclude=".*" --exclude="iris_travis" --delete -vPre 'ssh -i iris_travis -p 222' . www-data@iris.skowron.biz:/var/www/osm.link/
+  - rsync --exclude=".*" --exclude="iris_travis" --delete -vPre 'ssh -i iris_travis -p 222 -o "StrictHostKeyChecking no"' . www-data@iris.skowron.biz:/var/www/osm.link/
