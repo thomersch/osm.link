@@ -4,6 +4,9 @@ branches:
   only:
     - master
 
+script:
+  - echo "Nothing here yet"
+
 before_install:
 - openssl aes-256-cbc -K $encrypted_74631b0d0741_key -iv $encrypted_74631b0d0741_iv
   -in iris_travis.enc -out iris_travis -d
