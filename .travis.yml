@@ -9,5 +9,8 @@ before_install:
   - chmod 600 .iris_travis
   - cat .iris_travis
 
+script:
+  - echo "No building step yet"
+
 after_success:
   - rsync --exclude=".*" --delete -vPre 'ssh -i .iris_travis -p 222 -o "StrictHostKeyChecking no"' . www-data@iris.skowron.biz:/var/www/osm.link/
