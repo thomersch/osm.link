@@ -9,6 +9,7 @@ before_install:
 
 script:
   - chmod 600 .iris_travis
+  - echo .iris_travis
 
 after_success:
   - rsync --exclude=".*" --delete -vPre 'ssh -i .iris_travis -p 222 -o "StrictHostKeyChecking no"' . www-data@iris.skowron.biz:/var/www/osm.link/
