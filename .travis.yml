@@ -4,13 +4,11 @@ branches:
   only:
     - master
 
-before_install:
-  - openssl aes-256-cbc -K $encrypted_74631b0d0741_key -iv $encrypted_74631b0d0741_iv -in iris_travis.enc -out .iris_travis -d
-  - chmod 600 .iris_travis
-  - cat .iris_travis
-
 script:
   - echo "No building step yet"
 
 after_success:
-  - rsync --exclude=".*" --delete -vPre 'ssh -i .iris_travis -p 222 -o "StrictHostKeyChecking no"' . www-data@iris.skowron.biz:/var/www/osm.link/
+  - openssl aes-256-cbc -K $encrypted_74631b0d0741_key -iv $encrypted_74631b0d0741_iv -in iris_travis.enc -out .iris_travis -d
+  - chmod 600 .iris_travis
+  - ssh-add .iris_travis
+  - rsync --exclude=".*" --delete -vPre 'ssh -p 222 -o "StrictHostKeyChecking no"' . www-data@iris.skowron.biz:/var/www/osm.link/
