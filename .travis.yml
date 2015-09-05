@@ -8,7 +8,6 @@ script:
   - echo "No building step yet"
 
 after_success:
-  - openssl aes-256-cbc -K $encrypted_74631b0d0741_key -iv $encrypted_74631b0d0741_iv -in iris_travis.enc -out .iris_travis -d
-  - chmod 600 .iris_travis
-  - ssh-add .iris_travis
+  - openssl aes-256-cbc -K $encrypted_74631b0d0741_key -iv $encrypted_74631b0d0741_iv -in iris_travis.enc -out ~/.ssh/id_rsa -d
+  - chmod 600 ~/.ssh/id_rsa
   - rsync --exclude=".*" --delete -vPre 'ssh -p 222 -o "StrictHostKeyChecking no" -v' . www-data@iris.skowron.biz:/var/www/osm.link/
